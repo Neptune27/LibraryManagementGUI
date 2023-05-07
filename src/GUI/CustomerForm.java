@@ -8,6 +8,8 @@ import BUS.MembershipTypeBUS;
 import Utils.ComboBoxAutoSuggest.AutoSuggestComboBox;
 import DTO.Customer;
 import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
@@ -21,7 +23,7 @@ import java.util.ArrayList;
 public class CustomerForm {
     private CustomerBUS customerBUS = new CustomerBUS();
     private DefaultTableModel tblCustomerModel;
-    private TableRowSorter<DefaultTableModel> customerSorter;
+    private TableRowSorter<DefaultTableModel> customerSorter = new TableRowSorter<>();
     private JTextField txtCusId;
     private JTextField txtCusName;
     private JTextField txtCusEmail;
@@ -41,11 +43,17 @@ public class CustomerForm {
 
     public CustomerForm() {
         handleCustomer();
-        handleMembership();
-        handleMembershipType();
+//        handleMembership();
+//        handleMembershipType();
 
-        customerSorter = new TableRowSorter<>(tblCustomerModel);
-        tblCustomers.setRowSorter(customerSorter);
+        tabbedPane1.addChangeListener(new ChangeListener() {
+            @Override
+            public void stateChanged(ChangeEvent e) {
+                if (tabbedPane1.getSelectedIndex() == 1) {
+                    handleMembership();
+                }
+            }
+        });
     }
 
     public void handleMembershipType() {
