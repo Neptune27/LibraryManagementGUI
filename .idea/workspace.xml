@@ -6,12 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1021a47e-2efd-4ce8-bb3d-b93d3b36810e" name="Changes" comment="xong hoa don">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Borrow/BUS/BorrowDetailBUS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Borrow/BUS/BorrowDetailBUS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Borrow/DAO/BorrowDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Borrow/DAO/BorrowDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Borrow/DAO/BorrowDetailDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Borrow/DAO/BorrowDetailDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Borrow/DAO/FaultDetailDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Borrow/DAO/FaultDetailDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Borrow/GUI/BorrowDetailUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Borrow/GUI/BorrowDetailUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Borrow/GUI/BorrowUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Borrow/GUI/BorrowUI.java" afterDir="false" />
     </list>
     <list id="0ac5c50e-b7cb-4284-94c2-55684c3756bf" name="hoa don" comment="hoa don" />
     <option name="SHOW_DIALOG" value="false" />
